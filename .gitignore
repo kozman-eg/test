@@ -17,3 +17,19 @@
 /projict_Bank/projict_Bank.vcxproj.filters
 /projict_Bank/Source.cpp
 /projict_Bank/projict_Bank.vcxproj.user
+
+# Archive files
+*.zip
+*.rar
+
+# Visual Studio
+.vs/
+x64/
+Debug/
+Release/
+
+# Build files
+*.obj
+*.pdb
+*.exe
+*.ilk

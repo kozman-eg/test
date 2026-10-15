@@ -183,13 +183,28 @@ using namespace std;
      void clsMainScreen::ShowMainMenue()
     {
 
+         vector<string> options_menu = { "Show Client List.",
+                                         "Add New Client.",
+                                         "Delete Client.",
+                                         "Update Client Info.",
+                                         "Find Client.",
+                                         "Transactions.",
+                                         "Manage Users.",
+                                         "Login Register.",
+                                         "Currency Exchange.",
+                                         "Logout."
 
+         };
         short Choice = 0;
 
         do
         {
 
-        system("cls");
+            system("cls");
+             clsUtil::format_menu_table("Main Screen", options_menu);
+
+            /*
+            
         _DrawScreenHeader("\t\tMain Screen");
 
         cout << setw(37) << left << "" << "===========================================\n";
@@ -206,6 +221,7 @@ using namespace std;
         cout << setw(37) << left << "" << "\t[9] Currency Exchange.\n";
         cout << setw(37) << left << "" << "\t[10] Logout.\n";
         cout << setw(37) << left << "" << "===========================================\n";
+            */
 
         Choice = _ReadMainMenueOption();
 

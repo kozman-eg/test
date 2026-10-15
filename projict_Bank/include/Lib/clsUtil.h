@@ -94,5 +94,12 @@ public:
     static float MyABS(float Number);
 
 
+
+    static  string generate_line(string character, short length);
+
+
+    static void format_menu_table(string header, vector<string> options_menu);
+
     static string NumberToText(int Number);
+
 };
